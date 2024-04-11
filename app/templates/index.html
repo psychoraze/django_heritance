@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetsGram</title>
+</head>
+<body>
+    <a href="create"><i>Create Pet</i></a>
+    <a href="create_post"><i>Create Post</i></a>
+    {% for pet in pets %}
+        <img src="{{ pet.pic }}" alt="">
+        <a href="view_post"><h1>{{ pet.name }}</h1></a>
+    {% endfor %}
+</body>
+</html>
